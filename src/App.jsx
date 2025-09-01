@@ -4,7 +4,7 @@ import Education from './components/Education'
 import Experience from './components/Experience'
 
 function App() {
-  
+  return(<PersonalInfo />);
 }
 
 export default App
