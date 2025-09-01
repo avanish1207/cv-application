@@ -33,9 +33,13 @@ function Experience(){
             {
                 editing ? (
                     <div>
-                        <input type="text" name="company" value={text.company} onChange={handleChange}/>
-                        <input type="text" name="startDate" value={text.startDate} onChange={handleChange}/>
-                        <input type="text" name="endDate" value={text.endDate} onChange={handleChange}/>
+                        <h2>Enter Professional Experience</h2>
+                        <label htmlFor="company">Company Name</label>
+                        <input type="text" id="company" name="company" value={text.company} onChange={handleChange}/>
+                        <label htmlFor="startDate">Start Date</label>
+                        <input type="date" id="startDate" name="startDate" value={text.startDate} onChange={handleChange}/>
+                        <label htmlFor="endDate">End Date</label>
+                        <input type="date" id="endDate" name="endDate" value={text.endDate} onChange={handleChange}/>
                         <button onClick={handleSubmit}>Submit</button>
                     </div>
                 ):(

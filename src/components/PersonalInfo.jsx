@@ -33,9 +33,13 @@ function PersonalInfo(){
             {
                 editing ? (
                     <div>
-                        <input type="text" value={text.name} name="name" onChange={handleChange}/>
-                        <input type="text" value={text.email} name="email" onChange={handleChange}/>
-                        <input type="text" value={text.phone} name="phone" onChange={handleChange}/>
+                        <h2>Enter Personal Information</h2>
+                        <label htmlFor="name">Enter Full Name</label>
+                        <input type="text" id="name" value={text.name} name="name" onChange={handleChange}/>
+                        <label htmlFor="email">Enter Email ID</label>
+                        <input type="text" id="email" value={text.email} name="email" onChange={handleChange}/>
+                        <label htmlFor="phone">Enter Phone Number</label>
+                        <input type="number" id="phone" value={text.phone} name="phone" onChange={handleChange}/>
                         <button onClick={handleSubmit}>Submit</button>
                     </div>
                 ):
