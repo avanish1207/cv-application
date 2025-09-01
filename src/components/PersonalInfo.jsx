@@ -25,7 +25,7 @@ function PersonalInfo(){
 
     const handleEdit=()=>{
         setText(display);
-    setEditing(true);
+        setEditing(true);
     }
 
     return(
