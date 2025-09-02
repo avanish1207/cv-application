@@ -1,12 +1,43 @@
-# React + Vite
+# CV Application - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic CV/Resume builder created with React, featuring an intuitive edit/submit interface that allows users to input their personal information, education, and work experience, then view it in a professional resume format.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates fundamental React concepts including:
+- **State Management** with `useState` hooks
+- **Controlled Components** for form handling
+- **Conditional Rendering** for edit/display modes
+- **Component Architecture** with reusable patterns
+- **Professional CSS Styling** for resume formatting
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Personal Information Section**: Name, email, and phone number input
+- **Education Section**: College/school name, graduation year, and CGPA/GPA
+- **Experience Section**: Company name, start date, and end date
+- **Edit/Submit Toggle**: Switch between form input and professional display modes
+- **Resume-Style Display**: Clean, black-and-white formatting that resembles a traditional CV
+- **Real-time Updates**: Immediate state updates when switching between modes
+
+## 🛠️ Technologies Used
+
+- **React 18** - Frontend framework
+- **Vite** - Build tool and development server
+- **CSS3** - Styling and layout
+- **JavaScript ES6+** - Modern JavaScript features
+
+## 📁 Project Structure
+
+src/
+├── components/
+│ ├── PersonalInfo.jsx
+│ ├── PersonalInfo.css
+│ ├── Education.jsx
+│ ├── Education.css
+│ ├── Experience.jsx
+│ └── Experience.css
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
