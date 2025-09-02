@@ -5,11 +5,12 @@ import Experience from './components/Experience'
 
 function App() {
   return(
-    <>
-    <PersonalInfo />
-    <Education />
-    <Experience />
-    </>
+    <div className="cv-container">
+      <h1>My CV Application</h1>
+      <PersonalInfo />
+      <Education />
+      <Experience />
+    </div>
   );
 }
 

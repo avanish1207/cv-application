@@ -1,0 +1,13 @@
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Times New Roman', serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: #000;
+}
+
+.cv-container h1 {
+  display: none; /* Hide main title in resume view */
+}

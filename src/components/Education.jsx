@@ -33,7 +33,7 @@ function Education(){
         <div>
             {
                 editing?(
-                    <div>
+                    <div className="education">
                         <h2>Enter Education Qualifications</h2>
                         <label htmlFor="college">Enter University Name</label>
                         <input type="text" id="college" name="college" value={text.college} onChange={handleChange}/>
@@ -44,11 +44,12 @@ function Education(){
                         <button onClick={handleSubmit}>Submit</button>
                     </div>
                 ):(
-                    <div>
-                        <div>{display.college}</div>
-                        <div>{display.year}</div>
-                        <div>{display.cgpa}</div>
-                        <button onClick={handleEdit}>Edit</button>
+                    <div className="education-display">
+                        <h3>Education</h3>
+                        <div className="institution">{display.college}</div>
+                        <div className="details">{display.year}</div>
+                        <div className="details">{display.cgpa}</div>
+                        <button className="edit-btn" onClick={handleEdit}>Edit</button>
                     </div>
                 )
             }

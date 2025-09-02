@@ -32,7 +32,7 @@ function PersonalInfo(){
         <div>
             {
                 editing ? (
-                    <div>
+                    <div className="personal-info">
                         <h2>Enter Personal Information</h2>
                         <label htmlFor="name">Enter Full Name</label>
                         <input type="text" id="name" value={text.name} name="name" onChange={handleChange}/>
@@ -44,11 +44,11 @@ function PersonalInfo(){
                     </div>
                 ):
                 (
-                    <div>
-                        <div>{display.name}</div>
-                        <div>{display.email}</div>
-                        <div>{display.phone}</div>
-                        <button onClick={handleEdit}>Edit</button>
+                    <div className="personal-info-display">
+                        <div className="name">{display.name}</div>
+                        <div className="contact-info">{display.email}</div>
+                        <div className="contact-info">{display.phone}</div>
+                        <button className="edit-btn" onClick={handleEdit}>Edit</button>
                     </div>
                 )
             }

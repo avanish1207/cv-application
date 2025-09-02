@@ -32,7 +32,7 @@ function Experience(){
         <div>
             {
                 editing ? (
-                    <div>
+                    <div className="experience">
                         <h2>Enter Professional Experience</h2>
                         <label htmlFor="company">Company Name</label>
                         <input type="text" id="company" name="company" value={text.company} onChange={handleChange}/>
@@ -43,11 +43,12 @@ function Experience(){
                         <button onClick={handleSubmit}>Submit</button>
                     </div>
                 ):(
-                    <div>
-                        <div>{display.company}</div>
-                        <div>{display.startDate}</div>
-                        <div>{display.endDate}</div>
-                        <button onClick={handleEdit}>Edit</button>
+                    <div className="experience-display">
+                        <h3>Experience</h3>
+                        <div className="company">{display.company}</div>
+                        <div className="details">{display.startDate}</div>
+                        <div className="details">{display.endDate}</div>
+                        <button className="edit-btn" onClick={handleEdit}>Edit</button>
                     </div>
                 )
             }
