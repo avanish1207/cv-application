@@ -1,5 +1,15 @@
 # CV Application - React Project
 
+## 🚀 Live Demo
+
+**View the deployed application**: https://monumental-sopapillas-72abdf.netlify.app/
+
+Try out all the features:
+- Fill in your personal information, education, and experience
+- Click Submit to see your professional CV format
+- Click Edit to modify any section
+
+
 A dynamic CV/Resume builder created with React, featuring an intuitive edit/submit interface that allows users to input their personal information, education, and work experience, then view it in a professional resume format.
 
 ## 🚀 Project Overview
